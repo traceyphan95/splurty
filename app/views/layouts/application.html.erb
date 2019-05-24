@@ -44,7 +44,7 @@
       <div class="container">
             <% if flash[:error].present? %>
               <div class="col-10 offset-1 alert alert-danger">
-               <%= flash[:error] %>
+               <%= flash[:error].html_safe %>
               </div>
              <% end %>
              <% yield %>
@@ -56,7 +56,7 @@
               <div class="col-6 footer-blurb">
                 Proudly hacked by <a href="[YOUR_PORTFOLIO_URL]">[Tracey Phan]</a><br />
                 Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
-               </div>
+              </div>
         </div>
       </div>
     </div>
